@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="d-flex">
+    <div class="flex-column" id="game-conteiner">
+        <div class="start-game conteiner">
+            <div id="animation">
+                <h1 id="title" class="my-3">Guess Number Game</h1>
+                <button id="start-button" class="my-4 ms-2 p-2">START!</button> 
+            </div>
+            
+        </div>
+        
+        <div id="game" class="conteiner m-auto w-8">
+            <form>
+                
+                <input id="number-chosen" required>
+                <button type="submit" id="submit" >SUBMIT</button>
+                <label for="number" class="label">
+                    <span id="choose-number-label">Choose a number between 1 and 10</span>
+                </label>
+            </form>
+        </div>
+    
+        <button class="d-none" id="restart">RESTART</button>
+    </div>
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>
